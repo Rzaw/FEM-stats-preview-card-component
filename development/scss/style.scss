@@ -1,0 +1,91 @@
+$bg-color: hsl(233, 47%, 7%);
+$card-bg-color: hsl(244, 38%, 16%);
+$card-banner-color: hsl(244, 38%, 50%);
+$text-accent-color: hsl(277, 64%, 61%);
+$primary-text-color: hsl(0, 0%, 100%);
+$p-color: hsla(0, 0%, 100%, 0.75);
+
+@media only screen and (min-width: 1440px) {}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 15px;
+}
+
+h1,
+h2 {
+    margin-top: 0em;
+    font-family: Inter;
+}
+
+h1>em {
+    color: $text-accent-color;
+    text-decoration: none;
+    font-style: normal;
+}
+
+p {
+    color: $p-color;
+    font-family: Lexend Deca;
+    line-height: 1.6;
+    font-weight: lighter;
+}
+
+.card {
+    background: $card-bg-color;
+    margin: 5.5rem 1rem;
+    border: 0px solid #000;
+    border-radius: 0.5em;
+
+    .banner img {
+        display: block;
+        box-shadow: none;
+        background: url("../images/image-header-mobile.jpg") $card-banner-color;
+        background-size: cover;
+        background-blend-mode: multiply;
+        width: 100%;
+        height: 260px;
+        border-radius: 0.5em 0.5em 0 0;
+    }
+
+    .content {
+        padding: 2em 1.6em;
+
+        .stats{
+            margin-top: 2.5em;
+
+            .stat{
+                margin-top: 1.7em;
+
+                h2{
+                    margin-bottom: 0;
+                }
+
+                h2:last-child{
+                    text-transform: uppercase;
+                }
+
+                p{
+                    margin: 0.4em 0 0 0;
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: Lexend Deca;
+    color:hsl(228, 54%, 32%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+    text-decoration: none;
+}
